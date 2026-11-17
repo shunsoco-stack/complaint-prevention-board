@@ -1,0 +1,208 @@
+/* 効果比較 */
+.comparison {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 25px 15px;
+  background: #f1f5ed;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+.comparison > div {
+  text-align: center;
+}
+.comparison small {
+  display: block;
+  color: #748568;
+}
+.comparison strong {
+  font-size: 36px;
+  font-weight: 600;
+}
+.comparison strong small {
+  display: inline;
+  font-size: 12px;
+  padding-left: 7px;
+}
+.comparison > span {
+  font-size: 24px;
+  color: #9daf93;
+}
+
+/* 月別グラフ */
+.monthly-chart {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  gap: 8px;
+  min-height: 220px;
+  border-bottom: 1px solid var(--line);
+  margin: 20px 0 12px;
+}
+.chart-column {
+  flex: 1;
+  text-align: center;
+  min-width: 0;
+}
+.chart-total {
+  color: #7f8e75;
+  font-size: 11px;
+}
+.stacked-bar {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+  margin: 5px auto 8px;
+  width: 65%;
+  max-width: 50px;
+}
+.chart-column small {
+  font-size: 10px;
+  color: #85927b;
+  white-space: nowrap;
+}
+.legend {
+  display: flex;
+  gap: 8px 18px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+.legend span {
+  font-size: 10px;
+  color: #7e8b75;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.legend i {
+  width: 9px;
+  height: 9px;
+  border-radius: 2px;
+}
+
+/* パレート図 */
+.pareto-chart {
+  height: 180px;
+  position: relative;
+  margin: 20px 30px 0 0;
+  border-bottom: 1px solid #d5dfce;
+}
+.pareto-bars {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  gap: 14px;
+}
+.pareto-bars > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+}
+.pareto-bars span {
+  font-size: 11px;
+  color: #748568;
+}
+.pareto-bars i {
+  width: 70%;
+  max-width: 60px;
+  background: #91aa8a;
+  display: block;
+}
+.pareto-chart svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
+}
+.axis-top,
+.axis-bottom {
+  position: absolute;
+  right: -32px;
+  font-size: 9px;
+  color: #aa8c5c;
+}
+.axis-top {
+  top: 0;
+}
+.axis-bottom {
+  bottom: 0;
+}
+.pareto-labels {
+  display: flex;
+  margin: 12px 30px 16px 0;
+  text-align: center;
+}
+.pareto-labels > span {
+  flex: 1;
+  font-size: 10px;
+  overflow-wrap: anywhere;
+}
+.pareto-labels small {
+  display: block;
+  color: #ae8e58;
+  font-size: 10px;
+}
+
+/* 集計表 */
+.table-scroll {
+  overflow-x: auto;
+  max-width: 100%;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+th,
+td {
+  text-align: left;
+  border-bottom: 1px solid var(--line);
+  padding: 14px 12px;
+}
+th {
+  font-weight: 500;
+  color: #718267;
+}
+.heatmap {
+  min-width: 700px;
+  border-collapse: separate;
+  border-spacing: 4px;
+}
+.heatmap td {
+  text-align: center;
+  border-radius: 4px;
+  min-width: 65px;
+}
+.heatmap th {
+  font-size: 11px;
+}
+.heatmap tbody th {
+  min-width: 155px;
+}
+summary {
+  cursor: pointer;
+  color: #7c8d71;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  font-size: 11px;
+}
+@media (max-width: 640px) {
+  .comparison {
+    gap: 20px;
+  }
+  .monthly-chart {
+    gap: 3px;
+  }
+  .chart-column small {
+    font-size: 8px;
+  }
+  .stacked-bar {
+    width: 80%;
+  }
+}

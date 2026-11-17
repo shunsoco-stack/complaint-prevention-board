@@ -1,0 +1,257 @@
+/* ボード・カード */
+.intro-strip {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  padding: 19px 23px;
+  background: #eaf0e5;
+  border: 1px solid #dfe7d8;
+  border-radius: 9px;
+  margin-bottom: 25px;
+}
+.intro-icon {
+  font-size: 29px;
+  color: #6c8b6f;
+}
+.intro-strip strong {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 3px;
+}
+.intro-strip div > span {
+  color: #7e8b78;
+  font-size: 11px;
+}
+.intro-label {
+  margin-left: auto;
+  border: 1px solid #cbd9c4;
+  border-radius: 4px;
+  padding: 5px 9px;
+  color: #71836a;
+  white-space: nowrap;
+  font-size: 10px;
+}
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 27px;
+}
+.stat-card {
+  background: white;
+  padding: 20px 21px 16px;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+}
+.stat-card > div {
+  font-size: 12px;
+  font-weight: 550;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.stat-icon {
+  opacity: 0.6;
+  font-size: 19px;
+}
+.stat-card > strong {
+  font-size: 38px;
+  line-height: 1.65;
+  font-weight: 650;
+  font-variant-numeric: tabular-nums;
+}
+.stat-card strong small {
+  font-size: 12px;
+  color: var(--muted);
+  font-weight: 400;
+  margin-left: 9px;
+}
+.stat-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 10px;
+}
+.stat-card.danger > strong {
+  color: #b05c50;
+}
+.stat-card.warning > strong {
+  color: #ad8851;
+}
+.stat-card.teal > strong {
+  color: #4c857b;
+}
+.two-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  margin-bottom: 24px;
+}
+.two-columns > .panel {
+  margin-bottom: 0;
+}
+.panel {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  margin-bottom: 24px;
+  min-width: 0;
+  overflow: hidden;
+}
+.panel-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 18px 22px;
+  border-bottom: 1px solid var(--line);
+}
+.panel-heading h2 {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.panel-heading a {
+  color: #708371;
+  font-size: 11px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+}
+.dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #c6a46f;
+}
+.dot.danger {
+  background: #bd7867;
+}
+.dot.teal {
+  background: #6a998a;
+}
+.dot.blue {
+  background: #7b92ab;
+}
+.task-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+  padding: 17px 22px;
+  border-bottom: 1px solid #edf0e9;
+}
+.task-row:hover,
+.claim-row:hover {
+  background: #fafbf7;
+}
+.task-row:last-child {
+  border-bottom: 0;
+}
+.task-row > div {
+  min-width: 0;
+}
+.task-row strong {
+  display: block;
+  font-size: 12px;
+  line-height: 1.65;
+  margin: 5px 0;
+}
+.task-row small {
+  color: var(--muted);
+  font-size: 10px;
+}
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 9px;
+  border-radius: 4px;
+  background: #f0f2ee;
+  color: #7c867a;
+  font-size: 10px;
+  line-height: 1.5;
+  font-weight: 550;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.badge.danger {
+  background: #f9ece7;
+  color: #ac5e50;
+}
+.badge.warning {
+  background: #faf2df;
+  color: #a38345;
+}
+.badge.teal {
+  background: #e6f0ec;
+  color: #4c8475;
+}
+.badge.blue {
+  background: #eaf0f6;
+  color: #647e99;
+}
+.badge.purple {
+  background: #eeeaf4;
+  color: #89739c;
+}
+.badge.success {
+  background: #edf2e8;
+  color: #718965;
+}
+.claim-row {
+  padding: 19px 22px;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  border-bottom: 1px solid #edf0e9;
+}
+.claim-row:last-child {
+  border: 0;
+}
+.claim-main {
+  flex: 1;
+  min-width: 0;
+}
+.row-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  color: var(--muted);
+  font-size: 10px;
+}
+.claim-main > strong {
+  display: block;
+  font-size: 13px;
+  font-weight: 550;
+  margin: 7px 0 4px;
+  overflow-wrap: anywhere;
+}
+.claim-main > small {
+  color: #859083;
+  font-size: 10px;
+}
+.separator {
+  padding: 0 8px;
+  color: #c1c8bd;
+}
+.chevron {
+  color: #a1b09f;
+}
+.notice {
+  background: #e7f0e6;
+  border: 1px solid #bccfb8;
+  padding: 12px 18px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  align-items: center;
+  border-radius: 8px;
+}
+.notice button {
+  background: transparent;
+  border: 0;
+}
