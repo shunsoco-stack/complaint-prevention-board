@@ -94,6 +94,10 @@ Next.js 16 / App Router / React 19 / TypeScript / Tailwind CSS 4 / CSS / ESLint�
 
 ## スクリーンショット
 
+![品質改善ボード画面](docs/screenshots/01-board.png)
+
+02（原因分析）と04（効果確認）はスマートフォン表示（390×844）、01・03・05はPC表示（1440幅）です。
+
 | 画面       | 画像                                                |
 | ---------- | --------------------------------------------------- |
 | ボード     | [01-board.png](docs/screenshots/01-board.png)       |
